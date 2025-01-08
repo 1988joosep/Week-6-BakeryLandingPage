@@ -1,3 +1,6 @@
+Siin on sinu CSS-kood, millele on lisatud kohandused mobiilse ja tahvelarvuti vaate jaoks, kasutades meedia päringuid:
+
+```css
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
@@ -9,16 +12,14 @@
 body {
     font-family: "Lato", sans-serif;
     line-height: 2;
-   
 }
 
 .header {
     height: 115vh;
-    background-image:linear-gradient(to bottom right, #ffffff69, #e63f3f5b), 
+    background-image: linear-gradient(to bottom right, #ffffff69, #e63f3f5b), 
     url('..//img/pexels-igor-ovsyannykov-56123-205961.jpg');
     background-position: center;
     background-size: cover;
-    
 }
 
 .text-box {
@@ -44,7 +45,6 @@ body {
     animation-name: moveInLeft;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
-   
 }
 
 @keyframes moveInLeft {
@@ -170,7 +170,7 @@ body {
 }
 
 .footer {
-    color: rgb(170, 170,143);
+    color: rgb(170, 170, 143);
     font-size: 1.4rem;
     height: 150px;
     padding: 1.5rem;
@@ -178,18 +178,88 @@ body {
 }
 
 .footer ul li {
-
     display: inline-block;
     margin: 1rem;
-
 }
 
 .footer ul li a {
-    color: rgb(170, 170,143);
+    color: rgb(170, 170, 143);
     text-decoration: none;
 }
 
 .footer ul li:hover, .footer ul li a:hover {
     color: #ff0095;
-    transform: scale();
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        height: 90vh;
+    }
+
+    .text-box {
+        transform: translate(-50%, -30%);
+    }
+
+    .heading-main {
+        font-size: 4rem;
+    }
+
+    .heading-sub {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+
+    .main {
+        height: auto;
+        padding-top: 3rem;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+
+    .gallery_photo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 70vh;
+    }
+
+    .text-box {
+        transform: translate(-50%, -25%);
+    }
+
+    .heading-main {
+        font-size: 3rem;
+    }
+
+    .heading-sub {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
 }
